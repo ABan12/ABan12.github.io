@@ -4,11 +4,33 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
+tmp_distill_post="_posts/2000-01-03-distill-integration.md"
 
 cleanup() {
+  rm -f "${tmp_distill_post}"
+  rmdir _posts 2>/dev/null || true
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+mkdir -p _posts
+
+cat >"${tmp_distill_post}" <<'MARKDOWN'
+---
+layout: distill
+title: distill integration fixture
+date: 2000-01-03
+permalink: /blog/distill-integration/
+giscus_comments: true
+related_posts: false
+mermaid:
+  enabled: true
+  zoomable: true
+tikzjax: true
+---
+
+Temporary integration fixture.
+MARKDOWN
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
@@ -20,7 +42,7 @@ YAML
 
 bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
 
-distill_page="${tmp_site}/blog/2021/distill/index.html"
+distill_page="${tmp_site}/blog/distill-integration/index.html"
 
 if [ ! -f "${distill_page}" ]; then
   echo "distill page was not generated at ${distill_page}" >&2
