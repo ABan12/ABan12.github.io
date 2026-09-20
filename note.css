@@ -1,0 +1,29 @@
+.reader-shell { max-width:920px; margin:32px auto 72px; padding:0 24px; }
+.reader-toolbar { display:flex; justify-content:space-between; gap:20px; align-items:center; font-size:13px; margin-bottom:24px; }
+.reader-toolbar > div { display:flex; align-items:center; gap:18px; }
+.reader-toolbar button { border:1px solid var(--line); border-radius:6px; background:var(--panel); color:var(--fg); padding:6px 12px; }
+.reader-paper { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:48px 60px 60px; }
+.reader-kicker { color:var(--muted); font-size:11px; letter-spacing:.08em; margin:0 0 28px; }
+.prose { font:16px/1.95 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif; overflow-wrap:anywhere; }
+.prose h1,.prose h2,.prose h3,.prose h4 { color:var(--heading); letter-spacing:-.02em; font-weight:650; line-height:1.45; margin:1.7em 0 .7em; }
+.prose h1 { font-size:30px; margin-top:0; padding-bottom:24px; border-bottom:1px solid var(--line); }
+.prose h2 { font-size:23px; }
+.prose h2::before { content:none; }
+.prose h3 { font-size:19px; }
+.prose p { margin:0 0 1.2em; }
+.prose ul,.prose ol { padding-left:1.6em; margin:0 0 1.3em; }
+.prose li { margin:.35em 0; }
+.prose code { font: .88em/1.7 "SFMono-Regular",Consolas,monospace; background:var(--bar); padding:.15em .4em; border-radius:4px; }
+.prose pre { background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:20px; overflow-x:auto; line-height:1.7; }
+.prose pre code { padding:0; background:none; white-space:pre; }
+.prose blockquote { margin:1.5em 0; border-left:3px solid var(--accent); padding:12px 20px; background:var(--soft); color:var(--muted); }
+.prose blockquote p:last-child { margin-bottom:0; }
+.prose img { max-width:100%; height:auto; border-radius:6px; }
+.prose table { display:block; max-width:100%; overflow-x:auto; border-collapse:collapse; margin:1.5em 0; font-size:14px; }
+.prose th,.prose td { border:1px solid var(--line); padding:10px 16px; text-align:left; }
+.prose th { background:var(--bar); }
+.prose hr { border:0; border-top:1px solid var(--line); margin:2em 0; }
+.prose a { text-decoration:underline; text-underline-offset:3px; }
+.prose .katex-display { overflow-x:auto; overflow-y:hidden; padding:8px 0; }
+.prose .katex { font-size:1.08em; }
+@media(max-width:640px) { .reader-shell { padding:0 12px; margin-top:18px; } .reader-paper { padding:28px 22px; } .reader-toolbar { flex-wrap:wrap; } .prose h1 { font-size:26px; } }
