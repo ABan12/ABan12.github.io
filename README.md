@@ -9,7 +9,7 @@ Terminal 风格个人主页，支持中英文、明暗主题、笔记阅读和 K
 
 ## 修改内容
 
-- `content.js`：中英文个人信息、动态、教育、项目、开源 PR、荣誉、笔记和联系方式。
+- `content.js`：中英文个人信息、动态、教育、项目、荣誉、笔记和联系方式。
 - `notes/`：Markdown 笔记正文。分组标题不设置链接，子笔记使用 children 数组。
 - `styles.css`：主页样式；`note.css`：笔记阅读页样式。
 - `assets/avatar.png`：头像；`assets/Fangcai-Zhao-CV.pdf`：简历文件。

@@ -28,7 +28,6 @@ window.PORTFOLIO_CONTENT = {
       publicationsTitle: "Publications",
       projectsEyebrow: "Selected work",
       projectsTitle: "Projects",
-      openSourceTitle: "Open-source PRs",
       notesTitle: "Notes",
       awardsEyebrow: "Recognition",
       awardsTitle: "Awards",
@@ -44,12 +43,6 @@ window.PORTFOLIO_CONTENT = {
         meta: "2026-08-15",
       },
     ],
-    openSource: [{
-      title: "FlagGems-sglang #42 · chunk_cumsum Triton Kernel",
-      description: "Implement Mamba’s chunk-wise cumulative sum in Triton, with generic and backend-specific implementations.",
-      meta: "Merged · Opened 2026-09-04",
-      href: "https://github.com/flagos-ai/FlagGems-sglang/pull/42",
-    }],
     notes: [{
       title: "mini-SGLang",
       children: [{
@@ -63,7 +56,6 @@ window.PORTFOLIO_CONTENT = {
       href: "./notes/flashattention-fa1-fa3-flashdecoding.md",
     }],
     notesEmpty: "Notes will be added here.",
-    openSourceEmpty: "Open-source pull requests will be added here.",
     education: [
       {
         title:
@@ -116,7 +108,6 @@ window.PORTFOLIO_CONTENT = {
       publicationsTitle: "论文",
       projectsEyebrow: "代表工作",
       projectsTitle: "项目",
-      openSourceTitle: "开源 PR",
       notesTitle: "笔记",
       awardsEyebrow: "荣誉与奖励",
       awardsTitle: "荣誉",
@@ -133,12 +124,6 @@ window.PORTFOLIO_CONTENT = {
         meta: "2026-08-15",
       },
     ],
-    openSource: [{
-      title: "FlagGems-sglang #42 · chunk_cumsum Triton 算子",
-      description: "为 Mamba 的分块累积求和实现 Triton 算子，提供通用实现与不同硬件后端的专用实现。",
-      meta: "已合并 · 提交于 2026-09-04",
-      href: "https://github.com/flagos-ai/FlagGems-sglang/pull/42",
-    }],
     notes: [{
       title: "mini-SGLang",
       children: [{
@@ -152,7 +137,6 @@ window.PORTFOLIO_CONTENT = {
       href: "./notes/flashattention-fa1-fa3-flashdecoding.md",
     }],
     notesEmpty: "笔记将在这里补充。",
-    openSourceEmpty: "开源 PR 记录将在这里补充。",
     education: [
       {
         title: "中国人民大学 · 智慧治理学院 · 电子信息（人工智能与智慧治理）专业硕士",

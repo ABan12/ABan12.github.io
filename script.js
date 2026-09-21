@@ -115,7 +115,6 @@ function renderPage(language) {
   text("nav-news", page.nav[1]);
   text("nav-education", page.nav[2]);
   text("nav-projects", page.nav[4]);
-  text("nav-open-source", page.sections.openSourceTitle);
   text("nav-notes", page.sections.notesTitle);
   text("nav-awards", page.nav[5]);
   text("nav-contact", page.nav[6]);
@@ -136,7 +135,6 @@ function renderPage(language) {
   text("education-title", page.sections.educationTitle);
   text("projects-eyebrow", page.sections.projectsEyebrow);
   text("projects-title", page.sections.projectsTitle);
-  text("open-source-title", page.sections.openSourceTitle);
   text("notes-title", page.sections.notesTitle);
   text("awards-eyebrow", page.sections.awardsEyebrow);
   text("awards-title", page.sections.awardsTitle);
@@ -148,7 +146,6 @@ function renderPage(language) {
   renderList("news-list", page.news, page.newsEmpty);
   renderList("education-list", page.education, "");
   renderList("projects-list", page.projects, page.projectsEmpty);
-  renderList("open-source-list", page.openSource, page.openSourceEmpty);
   renderList("notes-list", page.notes, page.notesEmpty);
   renderList("awards-list", page.awards, page.awardsEmpty);
   observeNewElements();
