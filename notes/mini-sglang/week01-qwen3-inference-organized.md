@@ -427,3 +427,9 @@ Scheduler._forward()
 └─ _process_last_data()
    等待拷贝完成 → 追加输出 → 检查停止条件 → 返回结果/回收资源
 ```
+
+## 十、Qwen3 推理流程总览
+
+[![Qwen3 一次推理流程：整体执行、Decoder 层、KV Cache 与下一步 Decode](qwen3-inference-overview.png)](qwen3-inference-overview.png)
+
+点击图片可打开原图，放大查看细节。
